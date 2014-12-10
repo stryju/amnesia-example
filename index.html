@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>amnesia example</title>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-amnesia-cache/index.js"></script>
+  <script src="script.js"></script>
+
+<body ng-app="amnesiaDemo">
+  <div style="float:left; width: 20em">
+    timeouts:
+    <ul>
+      <li ng:repeat="t in timeouts" ng-bind="t">
+    </ul>
+  </div>
+
+  <div style="float:left; width: 20em" ng-controller="FooController as fooCtrl">
+    <button type="button" ng-click="fooCtrl.get('foo.json')">get foo</button>
+    <button type="button" ng-click="fooCtrl.get('bar.json')">get bar</button>
+    <button type="button" ng-click="fooCtrl.get('baz.json')">get baz</button>
+
+    <pre ng-bind="data|json"></pre>
+  </div>

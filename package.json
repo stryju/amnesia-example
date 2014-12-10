@@ -1,0 +1,15 @@
+{
+  "name": "amnesia-example",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start" : "browser-sync start --server --exclude node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tomasz stryjewski <stryjewski.t@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^1.7.2"
+  }
+}
